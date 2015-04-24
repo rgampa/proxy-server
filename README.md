@@ -104,7 +104,7 @@ curl -v http://127.0.0.1:8001
 ```
 
 3) Passing logfile argument via CLI argument
-`nodemon --exec babel-node -- index.js --logfile='/tmp/proxy.log'`
+`nodemon --exec babel-node -- index.js --logFile='/tmp/proxy.log'`
 
 Logfile Output:
 ```
