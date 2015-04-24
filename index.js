@@ -8,7 +8,7 @@ let argv = require('yargs')
 let scheme = 'http://'
 let port = argv.port || argv.host === '127.0.0.1' ? 8000 : 80
 let destinationUrl = argv.url || scheme + argv.host + ':' + port
-let logStream = argv.logfile ? fs.createWriteStream(argv.logfile) : process.stdout
+let logStream = argv.logFile ? fs.createWriteStream(argv.logFile) : process.stdout
 
 http.createServer((req, res) => {
 	logStream.write('\nEcho request headers: \n' + JSON.stringify(req.headers) + '\n')
